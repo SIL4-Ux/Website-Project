@@ -74,12 +74,12 @@
 
 .icon a{
 	font-size: 1.6rem;
-	color: #333;;
+	color: #333;
+	margin: 50px 30px 0 20px;
 }
 
-.icon a:hover{
-	color: var(--pink);
-}
+
+
 
 
 						/*SLIDESHOWTEXT*/
@@ -198,37 +198,51 @@
 
 						/* BEST PRODUCTS*/
 .best{
-	margin: 100px 50px 0 150px;
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
 }
 
-.best h1{
+h1{
 	justify-content: left;
 	font-family: cursive;
+	margin: 70px 0px 0px 50px;
 }
 
 .best-product {
-	margin: 100px 0 0 200px;
+	margin: 50px 0 0 50px;
 	width: 70%;
-	height: 450px;
+	height: 300px;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	gap: 40px;
-
 }
 
 .best-product img{
-	width: 20%;
-	height: 100%;
+	width: 40%;
+	height: 70%;
 	object-fit: cover;
 	border-radius: 20px;
 	border: 2px solid rgba(255, 255, 255, 0.648);
-	animation: all ease-in-out 0.5s;
+	animation: all ease-in-out 0.7s;
+	
 }
 
 .best-product img:hover {
 	width: 50%;
 	box-shadow: 20px 20px 10px #FFBE7D;
+	filter: brigthness(60%);
+	transform: scale(1.1);
 }
+
+
+
+
+
+
+
+
 
 
 
