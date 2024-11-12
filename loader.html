@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Grid</title>
+<style>
+  /* Basic styling for the container */
+  .container {
+    display: grid;
+    grid-template-areas: 
+      "large large"
+      "small1 small2";
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: orange; /* Outer border color */
+    padding: 10px;
+  }
+
+  /* Styling for the images */
+  .large {
+    grid-area: large;
+    border: 10px solid orange;
+  }
+
+  .small1, .small2 {
+    border: 5px solid lightblue;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="large">
+    <img src="img/productP_sample1.jpg" alt="Large Flower Bouquet">
+  </div>
+  <div class="small1">
+    <img src="img/productP_sample1.jpg" alt="Small Flower Bouquet 1">
+  </div>
+  <div class="small2">
+    <img src="img/productP_sample1.jpg" alt="Small Flower Bouquet 2">
+  </div>
+</div>
+
+</body>
+</html>
