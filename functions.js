@@ -1,3 +1,4 @@
+//SLIDESHOW FUNCTION
 let slider = document.querySelector('.slider .sliding-images');
 let sliderImages = document.querySelectorAll('.slider .sliding-images .slider-images');
 let next = document.getElementById('next-button');
@@ -37,4 +38,21 @@ dots.forEach((li, key) => {
 })
 window.onresize = function(event) {
     reloadSlider();
+};
+
+
+
+//MENU FUNCTION
+function myFunction(event) {
+    event.stopPropagation(); // Prevent click from propagating to window
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.closest('.menubtn') && !event.target.closest('.dropdown')) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].classList.remove('show');
+        }
+    }
 };
