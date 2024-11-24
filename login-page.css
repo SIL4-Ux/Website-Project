@@ -56,7 +56,7 @@ input {
     margin-top: 40px;
     padding-right: 10px;
     font-size: 17px;
-    color: #0ef;
+    color: #000000;
 }
 
 .submit {
@@ -72,10 +72,15 @@ input {
     background: linear-gradient(45deg, #0ef, #c800ff);
 }
 
+ion-icon{
+	color: #000000;
+}
+
 .footer {
     margin-top: 30px;
     letter-spacing: 0.5px;
     font-size: 14px;
+    color: #000000;
 }
 
 .signup-link {
