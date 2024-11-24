@@ -70,7 +70,7 @@ input {
     border-radius: 40px;
     letter-spacing: 1px;
     cursor: pointer;
-    background: linear-gradient(45deg, #0ef, #c800ff);
+    background: linear-gradient(45deg, #EFCD5D, #95D387);
 }
 
 ion-icon{
@@ -88,14 +88,26 @@ ion-icon{
     color: #0ef;
     text-decoration: none;
 }
-
+/*
+.logoimg{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 390px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}*/
 .banner {
     position: absolute;
     top: 0;
     right: 0;
     width: 450px;
     height: 390px;
-    background: linear-gradient(to right, #0ef, #c800FF);
+    background: linear-gradient(to right, #EFCD5D, #95D387);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
     text-align: right;
     display: flex;
