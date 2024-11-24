@@ -52,6 +52,7 @@
 	object-fit: cover;
 	height: 100px;
 	position: relative;
+	z-index: 4000;
 
 }
 .logo {
@@ -94,6 +95,7 @@
 
 .navbar ul li a:hover{
 	color: #c2ffc7;
+	z-index: 10000; 
 }
 
 .icon a {
@@ -103,7 +105,7 @@
     border: none;
     cursor: pointer;
     justify-content: right;
-
+    z-index: 4000;
 }
 
 .icon a:hover {
@@ -117,7 +119,7 @@
     margin: 10px 30px 0 40px;
     cursor: pointer;
     border: none;
-
+     z-index: 4000;
 }
 
 .menubtn:hover {
@@ -136,25 +138,28 @@
     top: 50px;
     left: 0;
     background-color: #EFCD5D; /* Solid white background */
-    min-width: 120px;
+    min-width: 100px;
     padding: 10px; /* Add some spacing inside */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     border: 2px solid #ccc; /* Optional: Add a border */
     border-radius: 10px; /* Optional: Slightly round the corners */
-    z-index: 5000;
+    z-index: 100;
 }
 
 .dropdown a {
     color: black;
-    padding: 8px 12px;
+    padding: 8px 8px;
     text-decoration: none;
     display: block;
     border-radius: 3px;
+    justify-content: center;
+    padding-left: -60px;
 }
 
 .dropdown a:hover {
     background-color: #fff;
 }
+
 
 .show {
     display: block;
@@ -207,8 +212,8 @@
     margin: auto;
     position: relative;
     overflow: hidden;
-    z-index: 1;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .slider .sliding-images{
@@ -218,7 +223,6 @@
 	height: 100%;
 	display: flex;
 	width: max-content;
-	
 }
 
 .slider .sliding-images img{
@@ -227,7 +231,6 @@
 	height: 100%;
 	object-fit: cover;
 	border-radius: 20px;
-	z-index: 1;
 }
 
 .slider .slider-controls {
@@ -237,7 +240,7 @@
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
-	z-index: 1000;
+	
 }
 
 .slider .slider-controls button {
@@ -249,7 +252,7 @@
 	border: none;
 	font-family: monospace;
 	font-weight: bold;
-	z-index: 1000;
+	
 }
 
 .slider .dots{
@@ -262,7 +265,7 @@
 	padding: 0;
 	display: flex;
 	justify-content: center;
-	z-index: 1000;
+	
 }
 
 
